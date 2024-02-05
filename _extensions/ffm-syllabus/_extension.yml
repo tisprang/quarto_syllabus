@@ -9,3 +9,5 @@ contributes:
       include-in-header: partials/include-in-header.tex
       template-partials:
         - partials/before-body.tex
+      format-resources:
+        - res/logo.png
