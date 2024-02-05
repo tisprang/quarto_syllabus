@@ -4,7 +4,7 @@ format:
 geometry: margin=1in
 babel-lang: ngerman
 
-title: "Seminartitel"
+title: "Seminartitel, der lange genug ist damit er auf zwei Zeilen geht"
 subtitle: "Seminar-Untertitel"
 author: "Dozent:in"
 term: "Semester"
