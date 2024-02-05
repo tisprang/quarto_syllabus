@@ -1,0 +1,50 @@
+\makeatletter  
+\def\@maketitle{
+\begin{raggedleft}
+\includegraphics[width = 40mm]{res/logo}\\[8ex]
+\end{raggedleft}
+\begin{center}
+$if(title)$
+\title{$title$$if(thanks)$\thanks{$thanks$}$endif$}
+{\Huge \bfseries \@title }\\[4ex]
+$endif$
+$if(subtitle)$
+{\Large \bfseries $subtitle$ }\\[2ex]
+$endif$
+$if(author)$
+\author{$for(author)$$author$$sep$ \and $endfor$}
+{\large \@author }\\[2ex]
+$endif$
+\date{$date$}
+{\large $if(term)$$term$$endif$}\\[4ex]
+\end{center}}
+\makeatother
+
+\maketitle
+
+
+\noindent \begin{tabular*}{\textwidth}{ @{\extracolsep{\fill}} lr @{\extracolsep{\fill}}}
+
+Modulzuordnung: $if(modul)$$modul$$else$TBD$endif$ & E-Mail: $if(email)$\texttt{$email$}$else$TBD$endif$\\
+Uhrzeit: $if(time)$$time$$else$TBD$endif$  &  Sprechstunde: $if(sprechstunde)$$sprechstunde$$else$TBD$endif$\\
+Raum: $if(classroom)$$classroom$$else$TBD$endif$  & Büro: $if(office)$$office$$else$TBD$endif$\\
+	\hline
+	\end{tabular*}
+	
+\vspace{2mm}
+
+\renewcommand{\headrulewidth}{0.3pt}
+\renewcommand{\footrulewidth}{0.0pt} 
+\lhead{}
+\chead{}
+\rhead{\footnotesize $if(title)$$title$$else$SEMINAR$endif$ -- $if(term)$$term$$else$SEMESTER$endif$}
+\lfoot{}
+\cfoot{\small \thepage}
+\rfoot{}
+
+\fancypagestyle{firststyle}
+{
+\renewcommand{\headrulewidth}{0pt}%
+   \fancyhf{}
+   \fancyfoot[C]{\small \thepage}
+}
