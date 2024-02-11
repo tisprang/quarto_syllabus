@@ -20,9 +20,18 @@ fontsize: 12pt
 header-includes:
    - \linespread{1.15}
    - \usepackage{lipsum}
+filters:
+    - section-bibliographies
+
+citeproc: false
+reference-section-title: "Literatur"
+link-citations: true
 
 toc: false
-link-citations: true
+
+execute:
+  echo: false
+  warning: false
 ---
 
 
