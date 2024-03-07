@@ -5,13 +5,13 @@
 Use the following to install with template file:
 
 ```bash
-quarto use template tisprang/ffm-syllabus
+quarto use template tisprang/quarto_syllabus
 ```
 
 Use the following to install just the extension:
 
 ```bash
-quarto use template tisprang/ffm-syllabus
+quarto use template tisprang/quarto_syllabus
 ```
 
 ## Using

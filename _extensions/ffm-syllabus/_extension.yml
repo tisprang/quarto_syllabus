@@ -1,6 +1,6 @@
 title: Ffm-syllabus
 author: tisprang
-version: 1.7.0
+version: 1.7.1
 quarto-required: ">=1.4.0"
 contributes:
   formats:
@@ -17,8 +17,14 @@ contributes:
         - \usepackage{lipsum}
       filters:
         - section-bibliographies.lua
+
+      geometry: margin=1in
+
       citeproc: false
       link-citations: true
+
+      urlcolor: gray
+      citecolor: gray
 
       execute:
         echo: false
