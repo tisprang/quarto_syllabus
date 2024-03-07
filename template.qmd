@@ -16,31 +16,76 @@ office: "PEG"
 classroom: "PEG"
 sprechstunde: "nach Vereinbarung"
 
-fontsize: 12pt
-header-includes:
-   - \linespread{1.15}
-   - \usepackage{lipsum}
-filters:
-    - section-bibliographies
-
-citeproc: false
 reference-section-title: "Literatur"
-link-citations: true
-
-toc: false
-
-execute:
-  echo: false
-  warning: false
 ---
 
 
-## Introduction
+# Gegenstand
 
-*TODO* Create an example file that demonstrates the formatting and features of your format.
+\lipsum[1-2]
 
-## More Information
+# Lernziele
 
-You can learn more about controlling the appearance of PDF output here: <https://quarto.org/docs/output-formats/pdf-basics.html>
+\lipsum[3]
 
-\lipsum[1-10]
+# Ihre Pflichten
+
+\lipsum[4-5]
+
+# Seminarüberblick
+
+```{r}
+#| label: overview
+
+data.frame(
+    week = c(1:14),
+    date = c(
+      "D1",
+      "D2",
+      "D3",
+      "D4",
+      "D5",
+      "D6",
+      "D7",
+      "D8",
+      "D9",
+      "D10",
+      "D11",
+      "D12",
+      "D13",
+      "D14"
+    ),
+    topic = c(
+      "T1",
+      "T2",
+      "T3",
+      "T4",
+      "T5",
+      "T6",
+      "T7",
+      "T8",
+      "T9",
+      "T10",
+      "T11",
+      "T12",
+      "T13",
+      "T14"
+    )
+  ) |>
+  knitr::kable(
+    col.names = c("Sitzung", "Datum", "Thema"),
+    align = c("c", "c", "l"),
+    booktabs = TRUE,
+    linesep = ""
+  ) |>
+  kableExtra::row_spec(0, bold = TRUE) |>
+  kableExtra::kable_styling(position = "center")
+```
+
+# \textcolor{gublue}{1. Sitzung, 01.01.2024: Thema 1}
+
+{{< fa book >}} **Pflicht**:
+
+{{< fa plus-square >}} **Ergänzend**:
+
+\lipsum[6-7]

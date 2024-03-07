@@ -2,23 +2,22 @@
 
 ## Installing
 
-*TODO*: Replace the `<github-organization>` with your GitHub organization.
+Use the following to install with template file:
 
 ```bash
-quarto use template <github-organization>/ffm-syllabus
+quarto use template tisprang/ffm-syllabus
 ```
 
-This will install the extension and create an example qmd file that you can use as a starting place for your article.
+Use the following to install just the extension:
+
+```bash
+quarto use template tisprang/ffm-syllabus
+```
 
 ## Using
 
-*TODO*: Describe how to use your format.
+Adjust template file according to own purposes.
 
-## Format Options
+## Contributions
 
-*TODO*: If your format has options that can be set via document metadata, describe them.
-
-## Example
-
-Here is the source code for a minimal sample document: [example.qmd](example.qmd).
-
+This extension profits from the excellent contributions of GitHub users [tarleb](https://github.com/pandoc-ext/section-bibliographies/tree/main) and [B. Philipp Kleer](https://github.com/quarto-ext/fontawesome?tab=readme-ov-file).

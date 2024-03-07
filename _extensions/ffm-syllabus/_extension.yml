@@ -1,13 +1,25 @@
 title: Ffm-syllabus
 author: tisprang
-version: 1.0.0
+version: 1.7.0
 quarto-required: ">=1.4.0"
 contributes:
   formats:
     pdf:
-      toc: true
+      toc: false
       include-in-header: partials/include-in-header.tex
       template-partials:
         - partials/before-body.tex
       format-resources:
         - res/logo.png
+      fontsize: 12pt
+      header-includes:
+        - \linespread{1.15}
+        - \usepackage{lipsum}
+      filters:
+        - section-bibliographies.lua
+      citeproc: false
+      link-citations: true
+
+      execute:
+        echo: false
+        warning: false
